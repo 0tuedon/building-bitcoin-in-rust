@@ -1,0 +1,10 @@
+[workspace]
+
+resolver = "3"
+
+members = [
+    "lib",
+    "miner",
+    "node",
+    "wallet",
+]
