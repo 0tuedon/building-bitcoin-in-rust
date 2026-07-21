@@ -36,7 +36,7 @@ fn main() {
             .collect::<String>()
             .to_uppercase(),
         _ => {
-            eprintln!("Inavalid Operation: {}", op);
+            eprintln!("Invalid Operation: {}", op);
             exit(1);
         }
     };
