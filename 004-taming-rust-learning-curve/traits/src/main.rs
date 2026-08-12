@@ -1,11 +1,22 @@
 trait Quack {
     fn quack(&self);
 }
+trait Vehicle {
+    type Energy;
+    const WHEELS: u8;
 
+    fn energy_source(&self) -> Self::Energy;
+
+    fn print_wheels() {
+        println!("This vehicle has {} wheels", Self::WHEELS);
+    }
+}
 struct FormalDuck {
     name: String,
 }
-
+struct FixedArray<T, const N: usize> {
+    data: [T; N],
+}
 impl FormalDuck {
     fn new(name: String) -> Self {
         Self { name }
